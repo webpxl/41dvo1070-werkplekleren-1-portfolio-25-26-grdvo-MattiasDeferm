@@ -12,10 +12,216 @@
 <body>
 
     <p>Mattias Deferm</p>
-    <p>ik ben 18 jaar oud</p>
-    <p>ik woon in Lummen</p>
-    <p>ik studeer digitale vormgeving</p>
-    <p>ik heb een broer en een zus</p>
+    <style>
+        :root {
+            --hero-height: 60vh;
+        }
+        body {
+            scroll-behavior: smooth;
+        }
+        .hero {
+            height: var(--hero-height);
+            background: linear-gradient(180deg, rgba(13,110,253,0.12), rgba(255,255,255,0));
+            display: flex;
+            align-items: center;
+        }
+        .hero .profile {
+            max-width: 220px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+        .project-img {
+            height: 180px;
+            object-fit: cover;
+            border-top-left-radius: .5rem;
+            border-top-right-radius: .5rem;
+        }
+        footer {
+            background: #f8f9fa;
+        }
+    </style>
+    </head>
+    <body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">YourName</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                        aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h1 class="display-5 fw-bold">Hi, I am YourName</h1>
+                        <p class="lead">Frontend developer / Designer. I build responsive web experiences and clean interfaces.</p>
+                        <p>
+                            <a class="btn btn-primary me-2" href="#projects">See projects</a>
+                            <a class="btn btn-outline-secondary" href="#contact">Contact me</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <!-- Replace this image with your picture -->
+                        <img src="https://via.placeholder.com/400x400.png?text=Your+Photo" alt="Profile" class="profile shadow-sm">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4 text-center">
+                        <img src="https://via.placeholder.com/300x300.png?text=About+Image" alt="About" class="img-fluid rounded shadow-sm">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>About Me</h2>
+                        <p>I am a developer focused on creating fast, accessible, and delightful web experiences. Skilled with HTML, CSS, JavaScript, and modern frameworks.</p>
+                        <ul>
+                            <li>Experience with responsive design and Bootstrap</li>
+                            <li>Working on UI/UX improvements and performance</li>
+                            <li>Open to freelance and full-time opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="mb-0">Projects</h2>
+                    <a class="btn btn-outline-primary btn-sm" href="#contact">Hire me</a>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Project card (copy / replace for each project) -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <!-- Replace src with your project screenshot -->
+                            <img src="https://via.placeholder.com/600x400.png?text=Project+1" class="project-img" alt="Project 1">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Project Title 1</h5>
+                                <p class="card-text flex-grow-1">Short description of the project highlighting technologies and purpose.</p>
+                                <div class="mt-3">
+                                    <a class="btn btn-sm btn-primary" href="#" target="_blank">View</a>
+                                    <a class="btn btn-sm btn-outline-secondary" href="#" target="_blank">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/600x400.png?text=Project+2" class="project-img" alt="Project 2">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Project Title 2</h5>
+                                <p class="card-text flex-grow-1">Short description of the project highlighting technologies and purpose.</p>
+                                <div class="mt-3">
+                                    <a class="btn btn-sm btn-primary" href="#" target="_blank">View</a>
+                                    <a class="btn btn-sm btn-outline-secondary" href="#" target="_blank">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/600x400.png?text=Project+3" class="project-img" alt="Project 3">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Project Title 3</h5>
+                                <p class="card-text flex-grow-1">Short description of the project highlighting technologies and purpose.</p>
+                                <div class="mt-3">
+                                    <a class="btn btn-sm btn-primary" href="#" target="_blank">View</a>
+                                    <a class="btn btn-sm btn-outline-secondary" href="#" target="_blank">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more project cards as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Name</label>
+                                <input class="form-control" type="text" placeholder="Your name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input class="form-control" type="email" placeholder="you@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="5" placeholder="Brief message"></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Send</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <h5>Get in touch</h5>
+                            <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>email@example.com</p>
+                            <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Your City, Country</p>
+                            <p class="mb-0"><i class="bi bi-link-45deg me-2"></i><a href="#" target="_blank">GitHub / Portfolio link</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <small>&copy; <span id="year"></span> YourName. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Small helpers: set year and close mobile nav on nav link click
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        document.querySelectorAll('.navbar-collapse .nav-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                const bsCollapse = bootstrap.Collapse.getInstance(document.querySelector('.navbar-collapse'));
+                if (bsCollapse && window.getComputedStyle(document.querySelector('.navbar-toggler')).display !== 'none') {
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
