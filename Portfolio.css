@@ -1,0 +1,28 @@
+<style>
+:root {
+    --hero-height: 60vh;
+}
+body {
+    scroll-behavior: smooth;
+}
+.hero {
+    height: var(--hero-height);
+    background: linear-gradient(180deg, rgba(13,110,253,0.12), rgba(255,255,255,0));
+    display: flex;
+    align-items: center;
+}
+.hero .profile {
+    max-width: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.project-img {
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+footer {
+    background: #f8f9fa;
+}
+</style>
