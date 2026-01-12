@@ -153,3 +153,82 @@ header nav{ background: transparent; padding-top:1rem; padding-bottom:1rem; }
     .hero-title{ font-size:3.5rem; }
     .blob{ display:none; }
 }
+#about {
+    background-color: #faf1ff;
+    color: #ffffff;
+}
+
+/* ensure headings / subtext inside about are readable */
+#about .section-title,
+#about .section-sub,
+#about .feature-card h5,
+#about .feature-card p {
+    color: #ffffff;
+}
+
+/* subtle translucent card background so cards stand out on purple */
+#about .feature-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* lighten muted text for contrast */
+#about .text-muted { color: rgba(255,255,255,0.8) !important; }
+
+/* Card transform + shadow animation for all card-like elements */
+.feature-card,
+.lang-card,
+.edu-card,
+.contact-info-card,
+.qualities .card,
+.card {
+    /* baseline */
+    transition: transform 280ms cubic-bezier(.22,.9,.36,1), box-shadow 280ms ease;
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+    box-shadow: 0 6px 18px rgba(20, 20, 20, 0.06);
+    border-radius: 14px; /* keeps corners consistent when lifting */
+}
+
+/* Hover / keyboard-focus state */
+.feature-card:hover,
+.lang-card:hover,
+.edu-card:hover,
+.contact-info-card:hover,
+.qualities .card:hover,
+.card:hover,
+.feature-card:focus-visible,
+.lang-card:focus-visible,
+.edu-card:focus-visible,
+.contact-info-card:focus-visible,
+.qualities .card:focus-visible,
+.card:focus-visible {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 22px 48px rgba(20, 20, 20, 0.16);
+    z-index: 2;
+}
+
+/* Slightly different on active (press) */
+.feature-card:active,
+.lang-card:active,
+.edu-card:active,
+.contact-info-card:active,
+.qualities .card:active,
+.card:active {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 14px 32px rgba(20, 20, 20, 0.12);
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .feature-card,
+    .lang-card,
+    .edu-card,
+    .contact-info-card,
+    .qualities .card,
+    .card {
+        transition: none !important;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+}
