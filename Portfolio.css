@@ -165,6 +165,15 @@ header nav{ background: transparent; padding-top:1rem; padding-bottom:1rem; }
 #about .feature-card p {
     color: #ffffff;
 }
+#about .section-sub {
+    color: #7A01A2 !important;
+}
+
+#about h5,
+#about p.text-muted,
+#about .feature-card p {
+    color: #141414 !important;
+}
 
 /* subtle translucent card background so cards stand out on purple */
 #about .feature-card {
