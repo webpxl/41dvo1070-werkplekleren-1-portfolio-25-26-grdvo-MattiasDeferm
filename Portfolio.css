@@ -8,6 +8,31 @@
     --card-border: rgba(56,0,88,0.08);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@300;400;600;700;800&display=swap');
+
+/* ensure body uses Inter */
+body{
+    font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: var(--bg);
+    color: var(--navy);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* use Space Grotesk for headings / display text */
+h1,h2,h3,h4,h5,h6,
+.hero-title,
+.section .section-title,
+.feature-card h5,
+.eyebrow,
+.name-accent,
+.lang-code,
+.skill-label,
+.badge-top {
+    font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    /* keep existing font-weight rules as is */
+}
+
 html,body{height:100%}
 body{
     font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -116,6 +141,9 @@ header nav{ background: transparent; padding-top:1rem; padding-bottom:1rem; }
     display:block; height:100%;
     background: linear-gradient(90deg,var(--teal) 0%, var(--teal-dark) 100%);
     border-radius:8px;
+}
+#skills .qualities .card p {
+    color: #7A01A2 !important;
 }
 .qualities .card{
     border-radius:14px; border:1px solid var(--card-border);
@@ -240,4 +268,27 @@ header nav{ background: transparent; padding-top:1rem; padding-bottom:1rem; }
         transform: none !important;
         box-shadow: none !important;
     }
+}
+*:hover,
+*:focus,
+*:active,
+.hero-bg:hover *,
+#home:hover *,
+.section:hover * {
+    filter: none !important;
+    -webkit-filter: none !important;
+    backdrop-filter: none !important;
+}
+
+/* Optional: smooth transition when removing blur */
+.hero-bg *, .section * , img, .profile, .card, .feature-card {
+    transition: filter 160ms ease, -webkit-filter 160ms ease, backdrop-filter 160ms ease;
+}
+
+#talen {
+    background-color: #faf1ff;
+}
+
+#contact {
+    background-color: #faf1ff;
 }
