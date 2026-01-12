@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mattias Deferm — Portfolio</title>
+
+    <!-- Bootstrap CSS (core) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="Portfolio.js"></script>
+
+
+</head>
+<body>
+
+<!-- Header / Navbar -->
+<header class="py-3">
+    <nav class="container navbar navbar-expand-lg">
+        <a class="brand-md navbar-brand" href="#home">MD</a>
+
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a class="nav-link" href="#about">Over mij</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#talen">Talen</a></li>
+                <li class="nav-item"><a class="nav-link" href="#opleiding">Opleiding</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero-bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+
+    <div class="container hero-inner text-center">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-8">
+                <div class="eyebrow">Digital Design Student</div>
+                <h1 class="hero-title">
+                    Mattias
+                    <span class="name-accent">Deferm</span>
+                </h1>
+                <p class="hero-lead">Creatieve digitale vormgever in opleiding aan PXL Hogeschool. Gepassioneerd door design, technologie en visuele storytelling.</p>
+
+                <div class="d-flex justify-content-center gap-3 cta-group">
+                    <a href="#about" class="btn btn-lg btn-primary">Ontdek meer <i class="bi bi-chevron-down ms-2"></i></a>
+                    <a href="#contact" class="btn btn-lg btn-outline-white">Contact opnemen</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block text-center">
+                <img src="assets/hero-photo.png" alt="Profile" class="profile">
+            </div>
+        </div>
+    </div>
+</section>
+
+<main>
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title"><span style="color:var(--navy)">Over</span> <span style="color:var(--teal)">Mij</span></h2>
+            <p class="section-sub">Hallo! Ik ben Mattias, een enthousiaste student Digitale Vormgeving aan PXL Hogeschool. Met een achtergrond in bedrijfswetenschappen combineer ik analytisch denken met creatieve expressie.</p>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><img src="assets/icon-creative.svg" width="22" alt=""></div>
+                        <h5>Creatief</h5>
+                        <p class="text-muted">Passie voor visueel design en digitale creatie</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><img src="assets/icon-team.svg" width="22" alt=""></div>
+                        <h5>Teamplayer</h5>
+                        <p class="text-muted">Sterke communicatie en samenwerking</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><img src="assets/icon-learn.svg" width="22" alt=""></div>
+                        <h5>Leergierig</h5>
+                        <p class="text-muted">Continu nieuwe vaardigheden ontwikkelen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title"><span>Mijn</span> <span style="color:var(--teal)">Skills</span></h2>
+            <p class="section-sub">Een mix van technische expertise en persoonlijke kwaliteiten die ik meeneem in elk project.</p>
+
+            <div class="row g-4 mt-5">
+                <div class="col-lg-6">
+                    <h4 class="skill-label">Technische Skills</h4>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between"><small>Adobe Photoshop</small><small>85%</small></div>
+                        <div class="skill-bar mt-2"><span style="width:85%"></span></div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between"><small>Adobe Illustrator</small><small>80%</small></div>
+                        <div class="skill-bar mt-2"><span style="width:80%"></span></div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between"><small>Figma</small><small>90%</small></div>
+                        <div class="skill-bar mt-2"><span style="width:90%"></span></div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between"><small>WebStorm</small><small>70%</small></div>
+                        <div class="skill-bar mt-2"><span style="width:70%"></span></div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between"><small>Microsoft PowerPoint</small><small>95%</small></div>
+                        <div class="skill-bar mt-2"><span style="width:95%"></span></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h4 class="skill-label">Persoonlijke Kwaliteiten</h4>
+
+                    <div class="qualities mt-3">
+                        <div class="card mb-3 p-3">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="feature-icon" style="width:56px;height:56px;background:linear-gradient(180deg,#ffcf6b,#ffb46b);">🤝</div>
+                                <div>
+                                    <h5 class="mb-1">Teamplayer</h5>
+                                    <p class="mb-0 text-muted">Ik werk graag samen en draag bij aan groepssuccessen</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 p-3">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="feature-icon" style="width:56px;height:56px;background:linear-gradient(180deg,#c9b6ff,#8a8bff);">💬</div>
+                                <div>
+                                    <h5 class="mb-1">Sociaal</h5>
+                                    <p class="mb-0 text-muted">Open communicatie en sterke interpersoonlijke vaardigheden</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 p-3">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="feature-icon" style="width:56px;height:56px;background:linear-gradient(180deg,#ffd0d0,#ff9ea0);">🙌</div>
+                                <div>
+                                    <h5 class="mb-1">Hulpvaardig</h5>
+                                    <p class="mb-0 text-muted">Altijd bereid om collega's en teamleden te ondersteunen</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section id="talen" class="section">
+        <div class="container">
+            <h2 class="section-title"><span style="color:var(--teal)">Talen</span></h2>
+            <p class="section-sub">Communicatie in meerdere talen opent deuren naar internationale samenwerkingen.</p>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="lang-card">
+                        <div class="lang-code">NL</div>
+                        <div class="lang-name">Nederlands</div>
+                        <div class="lang-level">Moedertaal</div>
+                        <div class="circle" data-percent="100"><small>100%</small></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="lang-card">
+                        <div class="lang-code">GB</div>
+                        <div class="lang-name">Engels</div>
+                        <div class="lang-level">Goed</div>
+                        <div class="circle" data-percent="80"><small>80%</small></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="lang-card">
+                        <div class="lang-code">FR</div>
+                        <div class="lang-name">Frans</div>
+                        <div class="lang-level">Beginnend</div>
+                        <div class="circle" data-percent="35"><small>35%</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="opleiding" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Opleiding</h2>
+            <p class="section-sub">Mijn educatieve achtergrond die de basis vormt voor mijn carrière in design.</p>
+
+            <div class="row mt-4">
+                <div class="col-lg-10 mx-auto">
+                    <div class="edu-card">
+                        <span class="badge-top">Huidige studie</span>
+                        <div class="d-flex gap-3 align-items-start">
+                            <div style="width:72px;height:72px;border-radius:14px;background:var(--teal);display:grid;place-items:center;color:#fff;">
+                                <i class="bi bi-mortarboard-fill" style="font-size:1.25rem;"></i>
+                            </div>
+                            <div>
+                                <h5>Digitale Vormgeving</h5>
+                                <div class="text-muted mb-2"><i class="bi bi-geo-alt-fill me-2"></i>PXL Hogeschool &nbsp;&nbsp; <i class="bi bi-calendar2-event ms-3 me-2"></i> Huidig</div>
+                                <p class="mb-0 text-muted">Creatieve digitale vormgeving met focus op UI/UX design, branding en visuele communicatie.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edu-card">
+                        <div class="d-flex gap-3 align-items-start">
+                            <div style="width:72px;height:72px;border-radius:14px;background:#cfe9ef;display:grid;place-items:center;color:var(--navy);">
+                                <i class="bi bi-mortarboard" style="font-size:1.25rem;"></i>
+                            </div>
+                            <div>
+                                <h5>Bedrijfswetenschappen</h5>
+                                <div class="text-muted mb-2"><i class="bi bi-award me-2"></i> Diploma behaald &nbsp;&nbsp; <i class="bi bi-calendar2-event ms-3 me-2"></i> Afgerond</div>
+                                <p class="mb-0 text-muted">Sterke basis in bedrijfskundige principes, analyse en strategisch denken.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Neem <span style="color:var(--teal)">Contact</span> Op</h2>
+            <p class="section-sub">Heb je een project in gedachten of wil je samenwerken? Ik hoor graag van je!</p>
+
+            <div class="row mt-4">
+                <div class="col-lg-5">
+                    <h5>Laten we in contact komen</h5>
+                    <p class="text-muted">Of je nu een vraag hebt, een project wilt bespreken, of gewoon wilt kennismaken - ik sta open voor alle mogelijkheden.</p>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="bi bi-envelope-fill"></i></div>
+                        <div>
+                            <small class="text-muted">Email</small>
+                            <div class="fw-bold">mattias.deferm@student.pxl.be</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <small class="text-muted">Locatie</small>
+                            <div class="fw-bold">België</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <form class="contact-side">
+                        <div class="mb-3">
+                            <label class="form-label">Naam</label>
+                            <input class="form-control" placeholder="Je naam">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input class="form-control" placeholder="je@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Bericht</label>
+                            <textarea class="form-control" rows="5" placeholder="Vertel me over je project..."></textarea>
+                        </div>
+                        <button class="btn btn-primary w-100">Verstuur bericht <i class="bi bi-send ms-2"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="py-4">
+    <div class="container text-center">
+        <small>&copy; <span id="year"></span> Mattias Deferm. All rights reserved.</small>
+    </div>
+</footer>
+
+<!-- Bootstrap JS bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

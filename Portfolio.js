@@ -1,13 +1,11 @@
 <script>
-    // Small helpers: set year and close mobile nav on nav link click
+    // set footer year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    document.querySelectorAll('.navbar-collapse .nav-link').forEach(function (link) {
-    link.addEventListener('click', function () {
-        const bsCollapse = bootstrap.Collapse.getInstance(document.querySelector('.navbar-collapse'));
-        if (bsCollapse && window.getComputedStyle(document.querySelector('.navbar-toggler')).display !== 'none') {
-            bsCollapse.hide();
-        }
-    });
+    // set circular progress backgrounds from data-percent attributes
+    document.querySelectorAll('.circle').forEach(c=>{
+    const p = parseInt(c.getAttribute('data-percent') || '0',10);
+    const deg = Math.round(p * 3.6);
+    c.style.background = `conic-gradient(var(--teal) 0deg ${deg}deg, rgba(11,102,115,0.08) ${deg}deg 360deg)`;
 });
 </script>

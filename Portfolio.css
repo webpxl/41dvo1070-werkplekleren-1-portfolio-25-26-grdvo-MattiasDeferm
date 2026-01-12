@@ -1,28 +1,155 @@
-<style>
-:root {
-    --hero-height: 60vh;
+/* Portfolio.css */
+:root{
+    --bg: #ffffff;          /* white */
+    --teal: #7A01A2;        /* bright purple (accent) */
+    --teal-dark: #380058;   /* dark purple (accent-dark) */
+    --navy: #141414;        /* black / dark text */
+    --muted: rgba(122,1,162,0.45);
+    --card-border: rgba(56,0,88,0.08);
 }
-body {
-    scroll-behavior: smooth;
+
+html,body{height:100%}
+body{
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: var(--bg);
+    color: var(--navy);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
 }
-.hero {
-    height: var(--hero-height);
-    background: linear-gradient(180deg, rgba(13,110,253,0.12), rgba(255,255,255,0));
-    display: flex;
-    align-items: center;
+
+/* subtle radial blobs in hero background */
+.hero-bg{
+    position:relative;
+    overflow:hidden;
+    background: linear-gradient(180deg, #fff 0%, var(--bg) 100%);
+    padding:7rem 0;
 }
-.hero .profile {
-    max-width: 220px;
-    border-radius: 12px;
-    object-fit: cover;
+.blob{
+    position:absolute;
+    width:420px;
+    height:420px;
+    background: radial-gradient(circle at center, rgba(122,1,162,0.12) 0%, rgba(122,1,162,0.04) 40%, transparent 60%);
+    filter: blur(40px);
+    border-radius:50%;
+    pointer-events:none;
+    transform:translate3d(0,0,0);
 }
-.project-img {
-    height: 180px;
-    object-fit: cover;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
+.blob.b1{ left:-120px; bottom:20%; }
+.blob.b2{ right:-120px; top:10%; width:520px; height:520px; }
+
+/* Header */
+header nav{ background: transparent; padding-top:1rem; padding-bottom:1rem; }
+.brand-md{
+    font-weight:700;
+    color:var(--teal-dark);
+    letter-spacing:0.6px;
 }
-footer {
-    background: #f8f9fa;
+.navbar-nav .nav-link{ color: var(--teal-dark); padding:0.5rem 1rem; font-weight:600; }
+.navbar-nav .nav-link:hover{ color:var(--navy); }
+
+/* Hero content */
+.hero-inner{ position:relative; z-index:2; }
+.eyebrow{ color:var(--teal); letter-spacing:2px; font-size:0.85rem; font-weight:600; margin-bottom:1rem; text-transform:uppercase; }
+.hero-title{
+    font-weight:800;
+    font-size:5.5rem;
+    line-height:0.95;
+    margin:0;
+    color:var(--navy);
 }
-</style>
+.name-accent{ color:var(--teal); display:block; }
+.hero-lead{ color:var(--teal-dark); font-size:1.125rem; max-width:760px; margin:1.75rem auto 2rem; }
+
+.cta-group .btn{
+    border-radius:40px;
+    padding:0.85rem 1.6rem;
+    font-weight:700;
+}
+.btn-outline-white{
+    background:transparent;
+    color:var(--teal-dark);
+    border:2px solid rgba(122,1,162,0.12);
+    box-shadow:none;
+}
+.profile{
+    max-width:340px;
+    border-radius:12px;
+    box-shadow: 0 8px 30px rgba(20,20,20,0.06);
+}
+
+/* Section headings */
+.section{
+    padding:5rem 0;
+}
+.section .section-title{
+    text-align:center;
+    font-size:3rem;
+    font-weight:800;
+    margin-bottom:0.8rem;
+    color:var(--navy);
+}
+.section .section-sub{ text-align:center; color:var(--teal-dark); margin-bottom:2.5rem; max-width:900px; margin-left:auto; margin-right:auto; }
+
+/* feature / about cards */
+.feature-card{
+    background:#fff;
+    border-radius:14px;
+    padding:1.6rem;
+    border:1px solid var(--card-border);
+    box-shadow:none;
+    height:100%;
+}
+.feature-icon{
+    width:56px;height:56px;border-radius:12px;background:var(--teal);display:flex;align-items:center;justify-content:center;color:#fff;margin-bottom:0.6rem;
+}
+.feature-card h5{ font-weight:700; color:var(--navy); margin-top:0.2rem; }
+
+/* skills section */
+.skill-label{ font-weight:700; color:var(--navy); margin-bottom:0.5rem; }
+.skill-bar{
+    height:12px;
+    background: rgba(122,1,162,0.12);
+    border-radius:8px;
+    overflow:hidden;
+}
+.skill-bar > span{
+    display:block; height:100%;
+    background: linear-gradient(90deg,var(--teal) 0%, var(--teal-dark) 100%);
+    border-radius:8px;
+}
+.qualities .card{
+    border-radius:14px; border:1px solid var(--card-border);
+}
+
+/* languages circles */
+.lang-card{
+    background:#fff;border-radius:14px;padding:2.2rem;border:1px solid var(--card-border);
+    text-align:center;
+}
+.lang-code{ font-size:2.25rem;font-weight:800;color:var(--navy); }
+.lang-name{ font-weight:700;color:var(--navy); margin-bottom:0.3rem; }
+.lang-level{ color:var(--teal); margin-bottom:1rem; }
+
+.circle{
+    width:88px;height:88px;border-radius:50%;
+    display:inline-grid;place-items:center;
+    background: conic-gradient(var(--teal) 0deg, var(--teal) 0deg, rgba(122,1,162,0.08) 0deg);
+    box-shadow:inset 0 0 0 12px #fff;
+    margin-top:0.8rem;
+}
+.circle > small{ display:block; font-weight:700; color:var(--navy); }
+
+/* education cards */
+.edu-card{ background:#fff; border-radius:14px; padding:1.6rem; border:1px solid var(--card-border); position:relative; margin-bottom:1.6rem; }
+.badge-top{ position:absolute; right:12px; top:-12px; background:var(--teal); color:#fff; font-weight:700; padding:0.35rem 0.8rem; border-radius:999px; font-size:0.85rem; }
+
+/* contact */
+.contact-side{ background:#fff; padding:1.8rem; border-radius:14px; border:1px solid var(--card-border); }
+.contact-info-card{ background:#fff;border-radius:12px;padding:1rem;border:1px solid var(--card-border);display:flex;gap:1rem;align-items:center;margin-bottom:1rem; }
+.contact-info-icon{ width:48px;height:48px;border-radius:12px;background:var(--teal);display:grid;place-items:center;color:#fff; }
+
+/* responsive tweaks */
+@media (max-width:991px){
+    .hero-title{ font-size:3.5rem; }
+    .blob{ display:none; }
+}
