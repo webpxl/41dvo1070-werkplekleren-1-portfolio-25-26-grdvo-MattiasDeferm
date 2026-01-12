@@ -292,3 +292,21 @@ header nav{ background: transparent; padding-top:1rem; padding-bottom:1rem; }
 #contact {
     background-color: #faf1ff;
 }
+
+.card,
+.feature-card,
+.lang-card,
+.edu-card,
+.contact-info-card,
+.qualities .card {
+    border: 1px solid #7A01A2;
+}
+
+#about .feature-card,
+#about .card,
+#about .edu-card,
+#about .lang-card,
+#about .contact-info-card,
+#about .qualities .card {
+    border: 1px solid #7A01A2 !important;
+}
