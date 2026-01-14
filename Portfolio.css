@@ -172,7 +172,7 @@ header nav{ background: transparent; padding-top:1rem; padding-bottom:1rem; }
 .badge-top{ position:absolute; right:12px; top:-12px; background:var(--teal); color:#fff; font-weight:700; padding:0.35rem 0.8rem; border-radius:999px; font-size:0.85rem; }
 
 /* contact */
-.contact-side{ background:#fff; padding:1.8rem; border-radius:14px; border:1px solid var(--card-border); }
+.contact-side{ background:#fff; padding:1.8rem; border-radius:14px; border:1px solid #7A01A2; }
 .contact-info-card{ background:#fff;border-radius:12px;padding:1rem;border:1px solid var(--card-border);display:flex;gap:1rem;align-items:center;margin-bottom:1rem; }
 .contact-info-icon{ width:48px;height:48px;border-radius:12px;background:var(--teal);display:grid;place-items:center;color:#fff; }
 
@@ -289,9 +289,16 @@ header nav{ background: transparent; padding-top:1rem; padding-bottom:1rem; }
     background-color: #faf1ff;
 }
 
-#contact {
+/* Projecten krijgt de roze/paarse achtergrond */
+#projecten {
     background-color: #faf1ff;
 }
+
+/* Contact terug wit */
+#contact {
+    background-color: #ffffff;
+}
+
 
 .card,
 .feature-card,
