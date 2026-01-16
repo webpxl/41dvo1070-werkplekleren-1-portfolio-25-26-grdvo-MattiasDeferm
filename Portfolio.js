@@ -7,3 +7,4 @@
     const deg = Math.round(p * 3.6);
     c.style.background = `conic-gradient(var(--teal) 0deg ${deg}deg, rgba(11,102,115,0.08) ${deg}deg 360deg)`;
 });
+// Dit doet niks

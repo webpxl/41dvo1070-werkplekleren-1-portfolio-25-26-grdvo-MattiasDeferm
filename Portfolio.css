@@ -317,3 +317,8 @@ header nav{ background: transparent; padding-top:1rem; padding-bottom:1rem; }
 #about .qualities .card {
     border: 1px solid #7A01A2 !important;
 }
+
+.image {
+    border: #7A01A2 2px solid;
+    rounded: 12px;
+}
